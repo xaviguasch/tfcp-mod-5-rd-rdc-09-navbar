@@ -1,3 +1,65 @@
 /* ==========================
 	Write your solution here!
    ========================== */
+
+/* Typography */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-size: 3rem;
+  color: #143774;
+}
+
+.link {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #717171;
+}
+
+.link:focus,
+.link:hover {
+  border-bottom: 2px solid #717171;
+}
+
+/* Layout */
+
+.nav {
+  margin: 0;
+  background: #f8f8f8;
+  text-align: center;
+  padding: 1.5em;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link {
+  margin: 1em auto;
+}
+
+@media (min-width: 600px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 6em;
+  }
+  .links {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+  }
+}
